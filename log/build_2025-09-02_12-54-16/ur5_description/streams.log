@@ -1,0 +1,77 @@
+[0.216s] Invoking command in '/home/vishal/UR5_robot/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake /home/vishal/UR5_robot/src/ur5_description -DCMAKE_INSTALL_PREFIX=/home/vishal/UR5_robot/install/ur5_description
+[1.572s] -- The C compiler identification is GNU 11.4.0
+[2.663s] -- The CXX compiler identification is GNU 11.4.0
+[2.726s] -- Detecting C compiler ABI info
+[2.954s] -- Detecting C compiler ABI info - done
+[2.967s] -- Check for working C compiler: /usr/bin/cc - skipped
+[2.968s] -- Detecting C compile features
+[2.968s] -- Detecting C compile features - done
+[3.009s] -- Detecting CXX compiler ABI info
+[3.133s] -- Detecting CXX compiler ABI info - done
+[3.146s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.147s] -- Detecting CXX compile features
+[3.148s] -- Detecting CXX compile features - done
+[3.216s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[3.454s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter
+[3.867s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.080s] -- Added test 'copyright' to check source files copyright and LICENSE
+[5.086s] -- Added test 'flake8' to check Python code syntax and style conventions
+[5.088s] -- Added test 'lint_cmake' to check CMake code style
+[5.090s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[5.094s] -- Added test 'xmllint' to check XML markup files
+[5.097s] -- Configuring done (4.8s)
+[5.108s] -- Generating done (0.0s)
+[5.109s] -- Build files have been written to: /home/vishal/UR5_robot/build/ur5_description
+[5.113s] Invoked command in '/home/vishal/UR5_robot/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake /home/vishal/UR5_robot/src/ur5_description -DCMAKE_INSTALL_PREFIX=/home/vishal/UR5_robot/install/ur5_description
+[5.114s] Invoking command in '/home/vishal/UR5_robot/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --build /home/vishal/UR5_robot/build/ur5_description -- -j16 -l16
+[5.192s] Invoked command in '/home/vishal/UR5_robot/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --build /home/vishal/UR5_robot/build/ur5_description -- -j16 -l16
+[5.254s] Invoking command in '/home/vishal/UR5_robot/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --install /home/vishal/UR5_robot/build/ur5_description
+[5.313s] -- Install configuration: ""
+[5.313s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//launch
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//launch/visualize_ur5.launch.py
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/materials.urdf.xacro
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.urdf
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.urdf.xacro
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5jointlimitedrobot.urdf
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.transmission.xacro
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.gazebo.xacro
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/gazebo.urdf.xacro
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes
+[5.314s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5
+[5.315s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual
+[5.315s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/basin.STL
+[5.315s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Base.dae
+[5.315s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist2.dae
+[5.316s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist3.dae
+[5.316s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist1.dae
+[5.317s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Forearm.dae
+[5.319s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/UpperArm.dae
+[5.321s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Shoulder.dae
+[5.322s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/basin.dae
+[5.322s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision
+[5.322s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/basin.STL
+[5.322s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Base.dae
+[5.322s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist2.dae
+[5.323s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist3.dae
+[5.323s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist1.dae
+[5.323s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Forearm.dae
+[5.324s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/UpperArm.dae
+[5.324s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Shoulder.dae
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//rviz
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/path.sh
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/path.dsv
+[5.325s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.bash
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.sh
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.zsh
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.dsv
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/package.dsv
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/packages/ur5_description
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake
+[5.326s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/package.xml
+[5.328s] Invoked command in '/home/vishal/UR5_robot/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/UR5_robot/install/robotic_arms_control:/home/vishal/ROS2_UR5/install/robotic_arms_control:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --install /home/vishal/UR5_robot/build/ur5_description

@@ -1,0 +1,69 @@
+[0.495s] Invoking command in '/home/vishal/UR5_robot/src/robotic_arms_control': PYTHONPATH=/home/vishal/UR5_robot/build/robotic_arms_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_arms_control build --build-base /home/vishal/UR5_robot/build/robotic_arms_control/build install --record /home/vishal/UR5_robot/build/robotic_arms_control/install.log --single-version-externally-managed install_data
+[0.687s] running egg_info
+[0.687s] creating ../../build/robotic_arms_control/robotic_arms_control.egg-info
+[0.687s] writing ../../build/robotic_arms_control/robotic_arms_control.egg-info/PKG-INFO
+[0.687s] writing dependency_links to ../../build/robotic_arms_control/robotic_arms_control.egg-info/dependency_links.txt
+[0.687s] writing entry points to ../../build/robotic_arms_control/robotic_arms_control.egg-info/entry_points.txt
+[0.687s] writing requirements to ../../build/robotic_arms_control/robotic_arms_control.egg-info/requires.txt
+[0.688s] writing top-level names to ../../build/robotic_arms_control/robotic_arms_control.egg-info/top_level.txt
+[0.688s] writing manifest file '../../build/robotic_arms_control/robotic_arms_control.egg-info/SOURCES.txt'
+[0.689s] reading manifest file '../../build/robotic_arms_control/robotic_arms_control.egg-info/SOURCES.txt'
+[0.689s] writing manifest file '../../build/robotic_arms_control/robotic_arms_control.egg-info/SOURCES.txt'
+[0.689s] running build
+[0.689s] running build_py
+[0.689s] creating /home/vishal/UR5_robot/build/robotic_arms_control/build
+[0.690s] creating /home/vishal/UR5_robot/build/robotic_arms_control/build/lib
+[0.690s] creating /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/jtc_multi_goals.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/transform_publisher.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/joint_state_controller_test.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/__init__.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/joint_state_controller.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/Kinematic_solver.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] copying robotic_arms_control/Kinematic_solver_IK.py -> /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control
+[0.690s] running install
+[0.691s] running install_lib
+[0.691s] creating /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.691s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/jtc_multi_goals.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.691s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/transform_publisher.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.691s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/joint_state_controller_test.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.691s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/__init__.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.691s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/joint_state_controller.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.692s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/Kinematic_solver.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.692s] copying /home/vishal/UR5_robot/build/robotic_arms_control/build/lib/robotic_arms_control/Kinematic_solver_IK.py -> /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control
+[0.692s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/jtc_multi_goals.py to jtc_multi_goals.cpython-310.pyc
+[0.693s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/transform_publisher.py to transform_publisher.cpython-310.pyc
+[0.693s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/joint_state_controller_test.py to joint_state_controller_test.cpython-310.pyc
+[0.693s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/__init__.py to __init__.cpython-310.pyc
+[0.693s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/joint_state_controller.py to joint_state_controller.cpython-310.pyc
+[0.694s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/Kinematic_solver.py to Kinematic_solver.cpython-310.pyc
+[0.694s] byte-compiling /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control/Kinematic_solver_IK.py to Kinematic_solver_IK.cpython-310.pyc
+[0.694s] running install_data
+[0.694s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/ament_index
+[0.694s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/ament_index/resource_index
+[0.694s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/ament_index/resource_index/packages
+[0.694s] copying resource/robotic_arms_control -> /home/vishal/UR5_robot/install/robotic_arms_control/share/ament_index/resource_index/packages
+[0.694s] copying package.xml -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control
+[0.695s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] copying robotic_arms_control/launch/gazebo_bringup_1.launch.py -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] copying robotic_arms_control/launch/controller_spawner_1.launch.py -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] copying robotic_arms_control/launch/gazebo_bringup_ur5.launch.py -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] copying robotic_arms_control/launch/rviz_bringup.launch.py -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] copying robotic_arms_control/launch/controller_spawner_ur5.launch.py -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/launch
+[0.695s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/urdf
+[0.695s] copying robotic_arms_control/urdf/ur5.urdf -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/urdf
+[0.695s] copying robotic_arms_control/urdf/ur51.urdf -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/urdf
+[0.695s] copying robotic_arms_control/urdf/ur5jointlimitedrobot.urdf -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/urdf
+[0.695s] copying robotic_arms_control/urdf/ur5robot.urdf -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/urdf
+[0.695s] creating /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/config
+[0.695s] copying robotic_arms_control/config/ur5_itc_controller.yaml -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/config
+[0.695s] copying robotic_arms_control/config/ur5_pos_controller.yaml -> /home/vishal/UR5_robot/install/robotic_arms_control/share/robotic_arms_control/config
+[0.696s] running install_egg_info
+[0.697s] Copying ../../build/robotic_arms_control/robotic_arms_control.egg-info to /home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control-0.0.0-py3.10.egg-info
+[0.697s] running install_scripts
+[0.712s] Installing joint_state_controller_test script to /home/vishal/UR5_robot/install/robotic_arms_control/lib/robotic_arms_control
+[0.712s] Installing jtc_multi_goals script to /home/vishal/UR5_robot/install/robotic_arms_control/lib/robotic_arms_control
+[0.712s] Installing kinematic_solver_IK script to /home/vishal/UR5_robot/install/robotic_arms_control/lib/robotic_arms_control
+[0.712s] Installing transform_publisher script to /home/vishal/UR5_robot/install/robotic_arms_control/lib/robotic_arms_control
+[0.712s] writing list of installed files to '/home/vishal/UR5_robot/build/robotic_arms_control/install.log'
+[0.731s] Invoked command in '/home/vishal/UR5_robot/src/robotic_arms_control' returned '0': PYTHONPATH=/home/vishal/UR5_robot/build/robotic_arms_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vishal/UR5_robot/install/robotic_arms_control/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/robotic_arms_control build --build-base /home/vishal/UR5_robot/build/robotic_arms_control/build install --record /home/vishal/UR5_robot/build/robotic_arms_control/install.log --single-version-externally-managed install_data

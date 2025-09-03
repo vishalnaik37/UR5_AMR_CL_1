@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/vishal/UR5_robot/build/ur5_description/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

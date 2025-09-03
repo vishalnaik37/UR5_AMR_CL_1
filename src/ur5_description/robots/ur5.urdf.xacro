@@ -1,0 +1,262 @@
+<?xml version="1.0"?>
+
+<robot xmlns:sensor="http://playerstage.sourceforge.net/gazebo/xmlschema/#sensor"
+       xmlns:controller="http://playerstage.sourceforge.net/gazebo/xmlschema/#controller"
+       xmlns:interface="http://playerstage.sourceforge.net/gazebo/xmlschema/#interface"
+       xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <!-- Include transmissions, Gazebo configs, and materials -->
+  <xacro:include filename="$(find ur5_description)/robots/ur5.transmission.xacro" />
+  <xacro:include filename="$(find ur5_description)/robots/ur5.gazebo.xacro" />
+  <xacro:include filename="$(find ur5_description)/robots/materials.urdf.xacro" />
+
+  <property name="pi" value="3.14159265" />
+
+  <!-- Mass properties -->
+  <property name="base_mass" value="4.0" />
+  <property name="shoulder_mass" value="3.7000" />
+  <property name="upper_arm_mass" value="8.3930" />
+  <property name="forearm_mass" value="2.2750" />
+  <property name="wrist_1_mass" value="1.2190" />
+  <property name="wrist_2_mass" value="1.2190" />
+  <property name="wrist_3_mass" value="0.1879" />
+
+  <property name="shoulder_cog" value="0.0 0.00193 -0.02561" />
+  <property name="upper_arm_cog" value="0.0 -0.024201 0.2125" />
+  <property name="forearm_cog" value="0.0 0.0265 0.11993" />
+  <property name="wrist_1_cog" value="0.0 0.110949 0.01634" />
+  <property name="wrist_2_cog" value="0.0 0.0018 0.11099" />
+  <property name="wrist_3_cog" value="0.0 0.001159 0.0" />
+
+  <!-- Kinematic parameters -->
+  <property name="shoulder_height" value="0.089159" />
+  <property name="shoulder_offset" value="0.13585" />
+  <property name="upper_arm_length" value="0.42500" />
+  <property name="elbow_offset" value="0.1197" />
+  <property name="forearm_length" value="0.39225" />
+  <property name="wrist_1_length" value="0.093" />
+  <property name="wrist_2_length" value="0.09465" />
+  <property name="wrist_3_length" value="0.0823" />
+
+  <xacro:macro name="ur5_robot" params="prefix">
+
+    <!-- Base link -->
+    <link name="${prefix}base_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Base.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Base.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${base_mass}"/>
+        <inertia ixx="1.0" ixy="0.0" ixz="0.0" iyy="1.0" iyz="0.0" izz="1.0"/>
+      </inertial>
+    </link>
+
+    <!-- Shoulder -->
+    <joint name="${prefix}shoulder_pan_joint" type="revolute">
+      <parent link="${prefix}base_link"/>
+      <child link="${prefix}shoulder_link"/>
+      <origin xyz="0 0 ${shoulder_height}" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="${-2*pi}" upper="${2*pi}" effort="150" velocity="${pi}"/>
+      <dynamics damping="0.4" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}shoulder_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Shoulder.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Shoulder.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${shoulder_mass}"/>
+        <origin xyz="${shoulder_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- Upper arm -->
+    <joint name="${prefix}shoulder_lift_joint" type="revolute">
+      <parent link="${prefix}shoulder_link"/>
+      <child link="${prefix}upper_arm_link"/>
+      <origin xyz="0 ${shoulder_offset} 0" rpy="0 ${pi/2} 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${-2*pi}" upper="${2*pi}" effort="150" velocity="${pi}"/>
+      <dynamics damping="0.4" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}upper_arm_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/UpperArm.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/UpperArm.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${upper_arm_mass}"/>
+        <origin xyz="${upper_arm_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- Forearm -->
+    <joint name="${prefix}elbow_joint" type="revolute">
+      <parent link="${prefix}upper_arm_link"/>
+      <child link="${prefix}forearm_link"/>
+      <origin xyz="0 ${-elbow_offset} ${upper_arm_length}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${-2*pi}" upper="${2*pi}" effort="150" velocity="${pi}"/>
+      <dynamics damping="0.4" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}forearm_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Forearm.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Forearm.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${forearm_mass}"/>
+        <origin xyz="${forearm_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- Wrist 1 -->
+    <joint name="${prefix}wrist_1_joint" type="revolute">
+      <parent link="${prefix}forearm_link"/>
+      <child link="${prefix}wrist_1_link"/>
+      <origin xyz="0 0 ${forearm_length}" rpy="0 ${pi/2} 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${-pi}" upper="${0.25*pi}" effort="28" velocity="${pi}"/>
+      <dynamics damping="0.3" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}wrist_1_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Wrist1.dae"/>
+        </geometry>
+        <origin xyz="0 ${wrist_1_length} 0" rpy="0 ${pi/2} 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Wrist1.dae"/>
+        </geometry>
+        <origin xyz="0 ${wrist_1_length} 0" rpy="0 ${pi/2} 0"/>
+      </collision>
+      <inertial>
+        <mass value="${wrist_1_mass}"/>
+        <origin xyz="${wrist_1_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- Wrist 2 -->
+    <joint name="${prefix}wrist_2_joint" type="revolute">
+      <parent link="${prefix}wrist_1_link"/>
+      <child link="${prefix}wrist_2_link"/>
+      <origin xyz="0 0 ${wrist_1_length}" rpy="0 0 0"/>
+      <axis xyz="0 0 1"/>
+      <limit lower="${-pi}" upper="${pi}" effort="28" velocity="${pi}"/>
+      <dynamics damping="0.3" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}wrist_2_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Wrist2.dae"/>
+        </geometry>
+        <origin xyz="0 0 ${wrist_2_length}" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Wrist2.dae"/>
+        </geometry>
+        <origin xyz="0 0 ${wrist_2_length}" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${wrist_2_mass}"/>
+        <origin xyz="${wrist_2_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- Wrist 3 -->
+    <joint name="${prefix}wrist_3_joint" type="revolute">
+      <parent link="${prefix}wrist_2_link"/>
+      <child link="${prefix}wrist_3_link"/>
+      <origin xyz="0 0 ${wrist_2_length}" rpy="0 0 0"/>
+      <axis xyz="0 1 0"/>
+      <limit lower="${-pi}" upper="${pi}" effort="28" velocity="${pi}"/>
+      <dynamics damping="0.3" friction="0.0"/>
+    </joint>
+
+    <link name="${prefix}wrist_3_link">
+      <visual>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/visual/Wrist3.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </visual>
+      <collision>
+        <geometry>
+          <mesh filename="package://ur5_description/meshes/ur5/collision/Wrist3.dae"/>
+        </geometry>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+      </collision>
+      <inertial>
+        <mass value="${wrist_3_mass}"/>
+        <origin xyz="${wrist_3_cog}" rpy="0 0 0"/>
+        <inertia ixx="1" ixy="0" ixz="0" iyy="1" iyz="0" izz="1"/>
+      </inertial>
+    </link>
+
+    <!-- End-effector -->
+    <joint name="${prefix}ee_fixed_joint" type="fixed">
+      <parent link="${prefix}wrist_3_link"/>
+      <child link="${prefix}ee_link"/>
+      <origin xyz="0 0 ${wrist_3_length}" rpy="0 0 0"/>
+    </joint>
+
+    <link name="${prefix}ee_link"/>
+
+    <!-- Transmission -->
+    <xacro:ur5_arm_transmission name="${prefix}"/>
+
+    <!-- Gazebo visual -->
+    <gazebo reference="${prefix}base_link">
+      <material>Gazebo/Blue</material>
+    </gazebo>
+
+  </xacro:macro>
+
+</robot>

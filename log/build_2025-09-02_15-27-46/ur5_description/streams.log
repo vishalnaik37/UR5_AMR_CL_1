@@ -1,0 +1,52 @@
+[0.940s] Invoking command in '/home/vishal/UR5_robot/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --build /home/vishal/UR5_robot/build/ur5_description -- -j16 -l16
+[4.947s] Invoked command in '/home/vishal/UR5_robot/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --build /home/vishal/UR5_robot/build/ur5_description -- -j16 -l16
+[5.273s] Invoking command in '/home/vishal/UR5_robot/build/ur5_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --install /home/vishal/UR5_robot/build/ur5_description
+[5.448s] -- Install configuration: ""
+[5.588s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//launch
+[5.651s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//launch/visualize_ur5.launch.py
+[5.652s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots
+[5.750s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/materials.urdf.xacro
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.urdf
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.urdf.xacro
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5jointlimitedrobot.urdf
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.transmission.xacro
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/ur5.gazebo.xacro
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//robots/gazebo.urdf.xacro
+[5.829s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes
+[5.917s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5
+[5.972s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/basin.STL
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Base.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist2.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist3.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Wrist1.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Forearm.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/UpperArm.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/Shoulder.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/visual/basin.dae
+[6.028s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/basin.STL
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Base.dae
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist2.dae
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist3.dae
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Wrist1.dae
+[6.061s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Forearm.dae
+[6.062s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/UpperArm.dae
+[6.062s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//meshes/ur5/collision/Shoulder.dae
+[6.062s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description//rviz
+[6.271s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/package_run_dependencies/ur5_description
+[6.304s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/parent_prefix_path/ur5_description
+[6.403s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/ament_prefix_path.sh
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/ament_prefix_path.dsv
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/path.sh
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/environment/path.dsv
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.bash
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.sh
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.zsh
+[6.404s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/local_setup.dsv
+[6.404s] -- Installing: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/package.dsv
+[6.824s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ament_index/resource_index/packages/ur5_description
+[6.891s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig.cmake
+[6.891s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/cmake/ur5_descriptionConfig-version.cmake
+[6.891s] -- Up-to-date: /home/vishal/UR5_robot/install/ur5_description/share/ur5_description/package.xml
+[6.894s] Invoked command in '/home/vishal/UR5_robot/build/ur5_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/vishal/ws_moveit/install/moveit_configs_utils:/home/vishal/ws_moveit/install/launch_param_builder:/opt/ros/humble /home/vishal/.local/bin/cmake --install /home/vishal/UR5_robot/build/ur5_description

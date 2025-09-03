@@ -1,0 +1,24 @@
+running egg_info
+writing ../../build/robotic_arms_control/robotic_arms_control.egg-info/PKG-INFO
+writing dependency_links to ../../build/robotic_arms_control/robotic_arms_control.egg-info/dependency_links.txt
+writing entry points to ../../build/robotic_arms_control/robotic_arms_control.egg-info/entry_points.txt
+writing requirements to ../../build/robotic_arms_control/robotic_arms_control.egg-info/requires.txt
+writing top-level names to ../../build/robotic_arms_control/robotic_arms_control.egg-info/top_level.txt
+reading manifest file '../../build/robotic_arms_control/robotic_arms_control.egg-info/SOURCES.txt'
+writing manifest file '../../build/robotic_arms_control/robotic_arms_control.egg-info/SOURCES.txt'
+running build
+running build_py
+running install
+running install_lib
+running install_data
+copying robotic_arms_control/urdf/ur5.urdf -> /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/share/robotic_arms_control/urdf
+copying robotic_arms_control/urdf/ur5_1.urdf -> /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/share/robotic_arms_control/urdf
+running install_egg_info
+removing '/home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control-0.0.0-py3.10.egg-info' (and everything under it)
+Copying ../../build/robotic_arms_control/robotic_arms_control.egg-info to /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/python3.10/site-packages/robotic_arms_control-0.0.0-py3.10.egg-info
+running install_scripts
+Installing joint_state_controller_test script to /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/robotic_arms_control
+Installing jtc_multi_goals script to /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/robotic_arms_control
+Installing kinematic_solver_IK script to /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/robotic_arms_control
+Installing transform_publisher script to /home/vishal/UR5_AMR_CL_1/install/robotic_arms_control/lib/robotic_arms_control
+writing list of installed files to '/home/vishal/UR5_AMR_CL_1/build/robotic_arms_control/install.log'
