@@ -16,15 +16,15 @@
    gedit /home/<user_name>/UR5_AMR_CL_1/src/robotic_arms_control/robotic_arms_control/urdf/ur5.urdf
 Add/verify the following inside <gazebo> tags:
      ```bash
-   <gazebo>   
-  <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
-    <robot_param>robot_description</robot_param>
-    <robot_param_node>robot_state_publisher</robot_param_node>
-    <parameters>
-      /home/vishal/UR5_AMR_CL_1/src/robotic_arms_control/robotic_arms_control/config/ur5_itc_controller.yaml
-    </parameters>
-  </plugin>
-</gazebo>
+      <gazebo>   
+        <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
+          <robot_param>robot_description</robot_param>
+          <robot_param_node>robot_state_publisher</robot_param_node>
+          <parameters>
+            /home/vishal/UR5_AMR_CL_1/src/robotic_arms_control/robotic_arms_control/config/ur5_itc_controller.yaml
+          </parameters>
+        </plugin>
+      </gazebo>
 
 Important: Ensure that the path in <parameters> is an absolute path on your system.
 
