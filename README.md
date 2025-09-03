@@ -9,12 +9,13 @@
 (or use HTTPS if you prefer)
 
 2. Navigate to the workspace
-
+   ```bash
    cd ~/UR5_AMR_CL_1
 
 3. Build the workspace and source the setup file
-
+   ```bash
    colcon build
+   ```bash
    source install/setup.bash
 
 4. Launch the UR5 controller in Gazebo
