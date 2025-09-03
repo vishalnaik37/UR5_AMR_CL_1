@@ -17,7 +17,6 @@
    gedit /home/<user_name>/UR5_AMR_CL_1/src/robotic_arms_control/robotic_arms_control/urdf/ur5.urdf
    
 Add/verify the following inside <gazebo> tags:
-     ```bash
       <gazebo>   
         <plugin name="gazebo_ros2_control" filename="libgazebo_ros2_control.so">
           <robot_param>robot_description</robot_param>
