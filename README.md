@@ -13,7 +13,9 @@
    cd ~/UR5_AMR_CL_1
 
 3. Open the URDF file and edit the Gazebo plugin section:
+   ```bash
    gedit /home/<user_name>/UR5_AMR_CL_1/src/robotic_arms_control/robotic_arms_control/urdf/ur5.urdf
+   
 Add/verify the following inside <gazebo> tags:
      ```bash
       <gazebo>   
